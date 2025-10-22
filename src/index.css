@@ -1,0 +1,101 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  padding: 0 70px;
+  margin: 0;
+  max-width: 100vw;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nav-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .85rem;
+  height: 70px;
+}
+
+.nav-bar > .first-panel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar li{
+  list-style-type: none;
+  border-right: 1px solid rgba(183, 183, 184, 0.4);
+  padding: 0 19px;
+}
+
+.nav-bar li:last-child{
+  border: none;
+}
+
+.nav-bar .help-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline-start: 0;
+}
+
+.nav-bar > .second-panel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar .user-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+.nav-bar .call-to-action{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar .call-to-action > a {
+  height: 35px;
+  width: 35px;
+}
+
+.nav-bar .call-to-action > .wish-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 0, 55);
+  color: white;
+  border-radius: 50%;
+  margin-right: 4px;
+  
+}
+
+.nav-bar .call-to-action > .cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: green;
+  color: white;
+  border-radius: 18px;
+  text-decoration: none;
+  margin-left: 4px;
+  width: 52px;
+  font-weight: 600;
+}
