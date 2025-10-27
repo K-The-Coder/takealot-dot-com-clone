@@ -87,15 +87,15 @@ body{
 }
 
 .nav-bar .call-to-action > .wish-list{
-  background: rgb(255, 0, 55);
+  background: #f4697a;
   color: white;
   border-radius: 50%;
   margin-right: 4px;
 }
 
-  .nav-bar .heart-icon{
-   font-size: 19px;
-  }
+.nav-bar .heart-icon{
+  font-size: 19px;
+}
 
 .nav-bar .call-to-action > .cart{
   background: green;
@@ -112,6 +112,162 @@ body{
   width: 100%;
   height: 100px;
 }
+
+.sub-header .sub-header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  height: 100%;
+  gap: 20px;
+}
+
+.sub-header-container .department-panel{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50px;
+  margin-top: 0;
+}
+
+.department-panel > .department-header{
+  background-color: #3a3a3a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+
+.department-panel > .dropdown-list{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: solid 0.1rem rgba(0, 0, 0, 0.5);
+  border-top: none;
+  list-style: none;
+  z-index: 10;
+  width: 100%;
+  display: none;
+}
+
+.department-panel:hover > .dropdown-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.department-panel ul{
+  padding: 0;
+}
+
+.department-panel ul > li{
+  border-bottom:1px solid rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.department-panel .right-arrow, .department-panel .down-arrow{
+  font-size: 12px;
+}
+
+.department-panel ul > li:hover{
+  background-color: #ccc;
+}
+
+.department-panel ul > li:last-child{
+  border: none;
+}
+
+.sub-header-container .search-and-tabs-panel{
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sub-header-container .tabs-bar{
+  padding: 0;
+  width: 100%;
+  flex: 1;
+}
+
+.sub-header-container .tabs-list{
+  display: flex;
+  align-items: stretch;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  gap: 0;
+  margin: 0;
+  width: 100%;
+  border-radius: 5px;
+  color: black;
+  background: white;
+  font-size: 0.7rem;
+  overflow: hidden;
+}
+
+.sub-header-container .tabs-list li{
+  flex: 1;
+  border-right: solid 1px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sub-header-container .tabs-list li:hover:not(.active){
+  background-color: #c0c0c0;
+}
+
+.sub-header-container .tabs-list li:nth-child(6){
+  background-color: #333333;
+  color: white;
+}
+
+.sub-header-container .tabs-list li:nth-child(9){
+  background-color: #f4697a;
+  color: white;
+}
+
+.sub-header-container .tabs-list li:last-child{
+  border-right: none;
+}
+
+.sub-header-container .search-bar{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sub-header-container .search-and-tabs-panel button{
+  background: #3a3a3a;
+  color: #ffffff;
+  border: none;
+  height: 100%;
+  width: 60px;
+}
+
+.sub-header-container .search-and-tabs-panel .search-icon{
+  font-size: 20px;
+}
+
+.search-bar #search-input{
+  flex: 1;
+  height: 100%;
+}
+
+
 
 /* ------------------------------- Mobile breakpoints ---------------------------*/
 
