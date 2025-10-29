@@ -1,5 +1,6 @@
 import {
   faAngleDown,
+  faBars,
   faChevronRight,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
@@ -13,19 +14,27 @@ export default function SubHeader() {
         <div className="sub-header-container">
           <div className="department-panel">
             <div className="department-header">
-              <p>Shop By Department <FontAwesomeIcon className="down-arrow" icon={faAngleDown} /></p>
+              <p>
+                Shop By Department{" "}
+                <FontAwesomeIcon className="down-arrow" icon={faAngleDown} />
+              </p>
             </div>
             <div className="dropdown-list">
               <ul className="department-list">
                 {departmentList.map((department) => (
                   <li key={department}>
-                    {department} <FontAwesomeIcon className="right-arrow" icon={faChevronRight} />{" "}
+                    {department}{" "}
+                    <FontAwesomeIcon
+                      className="right-arrow"
+                      icon={faChevronRight}
+                    />{" "}
                   </li>
                 ))}
               </ul>
             </div>
           </div>
           <div className="search-and-tabs-panel">
+            <FontAwesomeIcon className="menu-icon" icon={faBars} />
             <form className="search-bar">
               <input
                 type="search"
