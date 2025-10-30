@@ -1,25 +1,33 @@
 import {
-  faAngleDown,
   faBars,
+  faChevronDown,
   faChevronRight,
+  faChevronUp,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { departmentList, tabsList } from "../lists";
+import { useState } from "react";
 
 export default function SubHeader() {
+  const [isDeptOpen, setIsDeptOpen] = useState(false);
+
   return (
     <>
       <header className="sub-header">
         <div className="sub-header-container">
           <div className="department-panel">
-            <div className="department-header">
-              <p>
-                Shop By Department{" "}
-                <FontAwesomeIcon className="down-arrow" icon={faAngleDown} />
-              </p>
-            </div>
-            <div className="dropdown-list">
+            <button
+              className="department-toggle"
+              onClick={() => setIsDeptOpen(!isDeptOpen)}
+            >
+              <span>Departments</span>
+              <FontAwesomeIcon
+                className="chevron-icon"
+                icon={isDeptOpen ? faChevronUp : faChevronDown}
+              />
+            </button>
+            <div className={`dropdown-list ${isDeptOpen ? "open" : ""}`}>
               <ul className="department-list">
                 {departmentList.map((department) => (
                   <li key={department}>
