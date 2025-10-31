@@ -6,7 +6,7 @@ import {
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { departmentList, tabsList } from "../lists";
+import { departmentList, tabsList } from "../data/lists";
 import { useState } from "react";
 
 export default function SubHeader() {
