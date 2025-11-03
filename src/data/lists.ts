@@ -49,3 +49,26 @@ export const imageSlideShowList: { id: number; src: string }[] = [
     src: "src/assets/images/slideshow-images/ogcrrnxchhsrugccrugz.avif",
   },
 ];
+
+export const featuredBrandsImgList: {id: number, src: string}[] = [
+  {
+    id: 1,
+    src: "src/assets/images/featured-brands/0e8b2fa1f6e5ee5cff8912eb873fed5559163e92_2aXh4aQ.webp"
+  },
+  {
+    id: 2,
+    src: "src/assets/images/featured-brands/49b4b553873026941b732b5bd4f6e80453633b99.webp"
+  },
+  {
+    id: 3,
+    src: "src/assets/images/featured-brands/82cae5916932e63c0720addfdba0a473c2a0a423_vz8CGIg.webp"
+  },
+  {
+    id: 4,
+    src: "src/assets/images/featured-brands/bb35f99dcceb3fadbd4c53e78f1c54527fc1b0eb.webp"
+  },
+  {
+    id: 5,
+    src: "src/assets/images/featured-brands/e7471c0aed3071714323a2b85eb9da319e7f2ae2.webp"
+  }
+]
