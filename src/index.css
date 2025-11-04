@@ -314,7 +314,7 @@ body {
   position: absolute;
   top: 50%;
   width: auto;
-  /* margin-top: -22px; */
+  margin-top: -22px;
   padding: 16px;
   font-weight: bold;
   font-size: 18px;
@@ -362,6 +362,37 @@ body {
   }
 }
 
+/* ------------------------- */
+/*      Featured Brands      */
+/* ------------------------- */
+
+.featured-brands .featured-brands-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.featured-brands h3{
+  margin-left: 70px;
+}
+
+/* ------------------------- */
+/*      Product List         */
+/* ------------------------- */
+
+.product-list-panel h4{
+  margin-left: 70px;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/* TODO: continue from here */
 
 /* ------------------------------- Mobile breakpoints ---------------------------*/
 

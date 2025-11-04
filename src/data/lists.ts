@@ -50,25 +50,60 @@ export const imageSlideShowList: { id: number; src: string }[] = [
   },
 ];
 
-export const featuredBrandsImgList: {id: number, src: string}[] = [
+export const featuredBrandsImgList: { id: number; src: string }[] = [
   {
     id: 1,
-    src: "src/assets/images/featured-brands/0e8b2fa1f6e5ee5cff8912eb873fed5559163e92_2aXh4aQ.webp"
+    src: "src/assets/images/featured-brands/0e8b2fa1f6e5ee5cff8912eb873fed5559163e92_2aXh4aQ.webp",
   },
   {
     id: 2,
-    src: "src/assets/images/featured-brands/49b4b553873026941b732b5bd4f6e80453633b99.webp"
+    src: "src/assets/images/featured-brands/49b4b553873026941b732b5bd4f6e80453633b99.webp",
   },
   {
     id: 3,
-    src: "src/assets/images/featured-brands/82cae5916932e63c0720addfdba0a473c2a0a423_vz8CGIg.webp"
+    src: "src/assets/images/featured-brands/82cae5916932e63c0720addfdba0a473c2a0a423_vz8CGIg.webp",
   },
   {
     id: 4,
-    src: "src/assets/images/featured-brands/bb35f99dcceb3fadbd4c53e78f1c54527fc1b0eb.webp"
+    src: "src/assets/images/featured-brands/bb35f99dcceb3fadbd4c53e78f1c54527fc1b0eb.webp",
   },
   {
     id: 5,
-    src: "src/assets/images/featured-brands/e7471c0aed3071714323a2b85eb9da319e7f2ae2.webp"
-  }
-]
+    src: "src/assets/images/featured-brands/e7471c0aed3071714323a2b85eb9da319e7f2ae2.webp",
+  },
+];
+
+export const productCardData: {
+  id: number;
+  productImg: string;
+  productName: string;
+  productPrice: string | number;
+  starIcon: string | React.ReactNode;
+  productRating: string | number;
+}[] = [
+  {
+    id: 1,
+    productImg: "src/assets/images/product-card-images/s-xlpreview.webp",
+    productName:
+      "ASUS ROG Xbox Ally AMD Ryzen Z2A 16GB RAM 512GB Handheld Gaming Console",
+    productPrice: 12999,
+    starIcon: "★",
+    productRating: "5",
+  },
+  {
+    id: 2,
+    productImg: "src/assets/images/product-card-images/s-xlpreview(1).webp",
+    productName: "Valve Steam Deck - 512GB Handheld System (Parallel Import)",
+    productPrice: 14249,
+    starIcon: "★",
+    productRating: 4.7,
+  },
+  {
+    id: 3,
+    productImg: "src/assets/images/product-card-images/s-pdpxl.webp",
+    productName: "Playstation 5 Console - Family Bundle (PS5)",
+    productPrice: 38999,
+    starIcon: "★",
+    productRating: 4,
+  },
+];
