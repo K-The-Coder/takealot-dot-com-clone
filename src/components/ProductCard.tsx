@@ -16,11 +16,11 @@ export default function ProductCard({
 }: CardProps) {
   return (
     <div className="product-card">
-      <img src={productImg} />
+      <img className="product-image" src={productImg} />
       <div className="product-text">
-        <p>{productName}</p>
-        <p>R{productPrice}</p>
-        <div className="ratings">
+        <p className="product-name">{productName}</p>
+        <p className="product-price">R{productPrice}</p>
+        <div className="product-ratings">
           <p>{starIcon}</p>
           <p>{productRating}</p>
         </div>
