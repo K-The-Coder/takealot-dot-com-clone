@@ -1,4 +1,5 @@
 import FeaturedBrands from "./components/FeaturedBrands";
+import Footer from "./components/Footer";
 import ImageSlideShow from "./components/ImageSlideShow";
 import NavBar from "./components/NavBar";
 import ProductList from "./components/ProductList";
@@ -12,6 +13,7 @@ function App() {
       <ImageSlideShow />
       <FeaturedBrands />
       <ProductList />
+      <Footer />
     </>
   );
 }

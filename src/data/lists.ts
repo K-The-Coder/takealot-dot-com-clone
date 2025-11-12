@@ -78,7 +78,7 @@ export const productCardData: {
   productImg: string;
   productName: string;
   productPrice: string | number;
-  starIcon: string | React.ReactNode;
+  starIcon: React.ReactNode;
   productRating: string | number;
 }[] = [
   {

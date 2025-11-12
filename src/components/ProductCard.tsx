@@ -4,7 +4,7 @@ interface CardProps {
   productName: string;
   productPrice: string | number;
   productRating: string | number;
-  starIcon: string | React.ReactNode;
+  starIcon: React.ReactNode;
 }
 
 export default function ProductCard({
