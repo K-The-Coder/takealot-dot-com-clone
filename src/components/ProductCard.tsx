@@ -1,11 +1,4 @@
-interface CardProps {
-  id: number;
-  productImg: string;
-  productName: string;
-  productPrice: string | number;
-  productRating: string | number;
-  starIcon: React.ReactNode;
-}
+import type { CardProps } from "../interfaces";
 
 export default function ProductCard({
   productImg,

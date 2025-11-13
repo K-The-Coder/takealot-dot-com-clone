@@ -1,3 +1,5 @@
+import type { CardProps, FooterSectionProps, ImageProps } from "../interfaces";
+
 export const tabsList: string[] = [
   "ALOT For Less",
   "New Arrivals",
@@ -31,7 +33,7 @@ export const departmentList: string[] = [
   "Toys",
 ];
 
-export const imageSlideShowList: { id: number; src: string }[] = [
+export const imageSlideShowList: ImageProps[] = [
   {
     id: 1,
     src: "src/assets/images/slideshow-images/3adb6da39cc665da2a3adbf45b39bb17519a3140.jpg",
@@ -50,7 +52,7 @@ export const imageSlideShowList: { id: number; src: string }[] = [
   },
 ];
 
-export const featuredBrandsImgList: { id: number; src: string }[] = [
+export const featuredBrandsImgList: ImageProps[] = [
   {
     id: 1,
     src: "src/assets/images/featured-brands/0e8b2fa1f6e5ee5cff8912eb873fed5559163e92_2aXh4aQ.webp",
@@ -73,14 +75,7 @@ export const featuredBrandsImgList: { id: number; src: string }[] = [
   },
 ];
 
-export const productCardData: {
-  id: number;
-  productImg: string;
-  productName: string;
-  productPrice: string | number;
-  starIcon: React.ReactNode;
-  productRating: string | number;
-}[] = [
+export const productCardData: CardProps[] = [
   {
     id: 1,
     productImg: "src/assets/images/product-card-images/s-xlpreview.webp",
@@ -106,4 +101,63 @@ export const productCardData: {
     starIcon: "★",
     productRating: 4,
   },
+];
+
+export const footerData: FooterSectionProps[] = [
+  {
+    title: "Shop",
+    links: [
+      { label: "Deals", href: "#" },
+      { label: "Clearance Sale", href: "#" },
+      { label: "Gift Vouchers", href: "#" },
+    ],
+  },
+  {
+    title: "Account",
+    links: [
+      { label: "My Account", href: "#" },
+      { label: "Track Order", href: "#" },
+      { label: "Returns", href: "#" },
+      { label: "Personal Details", href: "#" },
+      { label: "Invoices", href: "#" },
+      { label: "TakealotMore", href: "#" },
+    ],
+  },
+  {
+    title: "Help",
+    links: [
+      { label: "Help Centre", href: "#" },
+      { label: "Contact Us", href: "#" },
+      { label: "Submit an Idea", href: "#" },
+      { label: "Suggest a Product", href: "#" },
+      { label: "Shipping & Delivery", href: "#" },
+      { label: "Takealot Pickup Points", href: "#" },
+      { label: "Returns", href: "#" },
+      { label: "Log Intellectual Property Complaint", href: "#" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { label: "About Us", href: "#" },
+      { label: "Careers", href: "#" },
+      { label: "Sell on Takealot", href: "#" },
+      { label: "Deliver for Takealot", href: "#" },
+      { label: "Press & News", href: "#" },
+      { label: "Competition", href: "#" },
+      { label: "Takealot for Business", href: "#" },
+      { label: "Mr D", href: "#" }
+    ],
+  },
+  {
+    title: "Takealot Policy",
+    links: [
+      {label: "Returns Policy", href: "#"},
+      {label: "Terms & Conditions", href: "#"},
+      {label: "Privacy Policity", href: "#"},
+      {label: "Humans Rights Statement", href: "#"},
+      {label: "Code of Advertising Practice", href: "#"},
+      {label: "Speak Up Process", href: "#"}
+    ]
+  }
 ];
