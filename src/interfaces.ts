@@ -1,3 +1,5 @@
+import type { IconDefinition } from "@fortawesome/free-solid-svg-icons";
+
 export interface LinkItemProps {
   label: string;
   href: string;
@@ -24,5 +26,12 @@ export interface CardProps {
   productName: string;
   productPrice: string | number;
   productRating: string | number;
-  starIcon: React.ReactNode;
+  starIcon: IconDefinition | React.ReactNode;
+}
+
+export interface SocialIconsProps{
+  id: number;
+  icon: IconDefinition;
+  className?: string;
+  title?: string;
 }

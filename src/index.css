@@ -419,6 +419,82 @@ body {
   font-weight: bold;
 }
 
+/* ------------------------- */
+/*         Footer            */
+/* ------------------------- */
+
+footer{
+  margin-top: 50px;
+}
+
+.footer-container{
+  margin: 0 70px;
+}
+
+.footer-categories{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-column h4{
+  margin: 0
+}
+
+.footer-column ul{
+  padding: 0;
+}
+
+.footer-column li{
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+.footer-column a{
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-socials{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.footer-department-links{
+  font-size: 0.6rem;
+}
+
+.footer-department-links .department-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  color: #0b79bf;
+}
+
+.footer-department-links .department-list li{
+  list-style: none;
+}
+
+.footer-department-links .department-list li::after {
+  content: "\00a0\00a0/";
+  padding-right: 10px;
+}
+
+.footer-bar{
+  background: #0b79bf;
+  height: 90px;
+}
+
 /* ------------------------------- Mobile breakpoints ---------------------------*/
 
 /* Tablet screens */

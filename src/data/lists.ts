@@ -1,4 +1,5 @@
-import type { CardProps, FooterSectionProps, ImageProps } from "../interfaces";
+import { faFacebook, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import type { CardProps, FooterSectionProps, ImageProps, SocialIconsProps } from "../interfaces";
 
 export const tabsList: string[] = [
   "ALOT For Less",
@@ -161,3 +162,39 @@ export const footerData: FooterSectionProps[] = [
     ]
   }
 ];
+
+export const downloadIconsList: ImageProps[] = [
+  {
+    id: 1,
+    src: "src/assets/images/download-app-images/app-store.svg-edce310696aa7f6191a1.svg"
+  },
+  {
+    id: 2,
+    src: "src/assets/images/download-app-images/google-play.svg-7a92427373a19e40a662.svg"
+  },
+  {
+    id: 3,
+    src: "src/assets/images/download-app-images/huawei-appgallery.svg-bb1c8aaa1305360a018d.svg"
+  }
+];
+
+export const socialIconsList: SocialIconsProps[] = [
+  {
+    id: 1,
+    icon: faFacebook,
+    className: "icon-facebook",
+    title: "Facebook"
+  },
+  {
+    id: 2,
+    icon: faXTwitter,
+    className: "icon-x-twitter",
+    title: "X"
+  },
+  {
+    id: 3,
+    icon: faInstagram,
+    className: "icon-instagram",
+    title: "Instagram"
+  }
+]

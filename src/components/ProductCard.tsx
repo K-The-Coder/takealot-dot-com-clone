@@ -14,7 +14,7 @@ export default function ProductCard({
         <p className="product-name">{productName}</p>
         <p className="product-price">R{productPrice}</p>
         <div className="product-ratings">
-          <p>{starIcon}</p>
+          <p>{starIcon as React.ReactNode}</p>
           <p>{productRating}</p>
         </div>
       </div>
