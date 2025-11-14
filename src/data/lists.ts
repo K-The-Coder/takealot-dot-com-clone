@@ -1,5 +1,5 @@
 import { faFacebook, faInstagram, faXTwitter } from "@fortawesome/free-brands-svg-icons";
-import type { CardProps, FooterSectionProps, ImageProps, SocialIconsProps } from "../interfaces";
+import type { CardProps, FooterColumnProps, ImageProps, SocialIconsProps } from "../interfaces";
 
 export const tabsList: string[] = [
   "ALOT For Less",
@@ -104,7 +104,7 @@ export const productCardData: CardProps[] = [
   },
 ];
 
-export const footerData: FooterSectionProps[] = [
+export const footerData: FooterColumnProps[] = [
   {
     title: "Shop",
     links: [

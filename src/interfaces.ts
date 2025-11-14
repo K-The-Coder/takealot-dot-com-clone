@@ -10,11 +10,6 @@ export interface FooterColumnProps {
   links: LinkItemProps[];
 }
 
-export interface FooterSectionProps {
-  title: string;
-  links: LinkItemProps[];
-}
-
 export interface ImageProps {
   id: number;
   src: string;
